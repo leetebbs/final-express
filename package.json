@@ -1,0 +1,30 @@
+{
+  "name": "final-express",
+  "version": "1.0.0",
+  "description": "vercel express",
+  "main": "index.js",
+  "engines": {
+    "node": "18.x"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leetebbs/final-express.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leetebbs/final-express/issues"
+  },
+  "homepage": "https://github.com/leetebbs/final-express#readme",
+  "dependencies": {
+    "alchemy-sdk": "^2.8.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "ethers": "5.7.2",
+    "express": "^4.18.2"
+  }
+}
