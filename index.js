@@ -686,6 +686,27 @@ app.get("/counter", async (req, res) => {
   res.json(results);
 });
 
+app.get("/usersActiveRaffles", async (req, res) => {
+  const results = [];
+  const owner = req.query.address;
+
+  const raffleContract = new ethers.Contract(
+    contractAddress,
+    raffleAbi,
+    provider
+  );
+  try {
+    console.log("fetching Data");
+    const count = await raffleContract.getActiveRaffles(owner);
+    results.push(count)
+  } catch (error) {
+    console.log(error);
+  }
+  res.json(results);
+});
+
+
+
 app.get("/winners", async (req, res) => {
   const results = [];
 
